@@ -21,10 +21,10 @@ param dalleApiVersion string
 
 param gptvisionLocation string
 param gptvisionDeploymentCapacity int = 30
-param gptvisionDeploymentName string = 'gpt-4-vision'
+param gptvisionDeploymentName string = 'gpt-4'
 param gptvisionModelName string = 'gpt-4'
-param gptvisionApiVersion string = '2023-12-01-preview'
-param gptvisionModelVersion string = 'vision-preview'
+param gptvisionApiVersion string = '2024-04-01-preview'
+param gptvisionModelVersion string = 'turbo-2024-04-09'
 
 param speechServiceSkuName string = 'S0'
 

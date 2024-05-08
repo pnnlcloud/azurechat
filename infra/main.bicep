@@ -40,16 +40,16 @@ param dalleDeploymentName string = 'dall-e-3'
 param dalleModelName string = 'dall-e-3'
 param dalleApiVersion string = '2023-12-01-preview'
 
-// DALL-E v3 only supported in Sweden Central for now
-@description('Location for the GPT vision instance resource')
-@allowed(['swedencentral','westus',])
+// GPT-4 Turbo 2024-04-09 only supported in Sweden Central and East US 2 for now
+@description('Location for the GPT-4 Turbo instance resource')
+@allowed(['swedencentral','eastus2'])
 param gptvisionLocation string
 
-param gptvisionDeploymentCapacity int = 1
-param gptvisionDeploymentName string = 'gpt-4-vision'
+param gptvisionDeploymentCapacity int = 80
+param gptvisionDeploymentName string = 'gpt-4'
 param gptvisionModelName string = 'gpt-4'
-param gptvisionApiVersion string = '2023-12-01-preview'
-param gptvisionModelVersion string = 'vision-preview'
+param gptvisionApiVersion string = '2024-04-01-preview'
+param gptvisionModelVersion string = 'turbo-2024-04-09'
 
 param formRecognizerSkuName string = 'S0'
 param searchServiceIndexName string = 'azure-chat'
