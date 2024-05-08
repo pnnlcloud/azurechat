@@ -20,7 +20,7 @@ param location string
 param openAILocation string
 
 param openAISku string = 'S0'
-param openAIApiVersion string = '2023-12-01-preview'
+param openAIApiVersion string = '2024-04-01-preview'
 
 param chatGptDeploymentCapacity int = 120
 param chatGptDeploymentName string = 'chat-gpt-35-turbo'
@@ -30,19 +30,19 @@ param embeddingDeploymentName string = 'embedding'
 param embeddingDeploymentCapacity int = 120
 param embeddingModelName string = 'text-embedding-ada-002'
 
-// DALL-E v3 only supported in Sweden Central for now
+// DALL-E v3 only supported in Australia East, East US, and Sweden Central for now
 @description('Location for the OpenAI DALL-E 3 instance resource group')
-@allowed(['swedencentral'])
+@allowed(['australiaeast','eastus','swedencentral'])
 param dalleLocation string
 
 param dalleDeploymentCapacity int = 1
 param dalleDeploymentName string = 'dall-e-3'
 param dalleModelName string = 'dall-e-3'
-param dalleApiVersion string = '2023-12-01-preview'
+param dalleApiVersion string = '2024-04-01-preview'
 
-// GPT-4 Turbo 2024-04-09 only supported in Sweden Central and East US 2 for now
+// GPT-4 Turbo 2024-04-09 only supported in East US 2 and Sweden Central for now
 @description('Location for the GPT-4 Turbo instance resource')
-@allowed(['swedencentral','eastus2'])
+@allowed(['eastus2','swedencentral'])
 param gptvisionLocation string
 
 param gptvisionDeploymentCapacity int = 80
